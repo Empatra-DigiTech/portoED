@@ -32,7 +32,7 @@ module.exports = {
         black: "#212b36",
         "dark-700": "#090e34b3",
         dark: {
-          DEFAULT: "#111928",
+          DEFAULT: "#0F3C5D",
           2: "#1F2A37",
           3: "#374151",
           4: "#4B5563",
@@ -41,7 +41,7 @@ module.exports = {
           7: "#D1D5DB",
           8: "#E5E7EB",
         },
-        primary: "#3758F9",
+        primary: "#FA851C",
         "blue-dark": "#1B44C8",
         secondary: "#13C296",
         "body-color": "#637381",

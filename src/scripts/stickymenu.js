@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if(logo.length) {
       // === logo change
       if (ud_header.classList.contains('sticky-header')) {
-        document.querySelector(".header-logo").src = '/assets/logo/Logo-Empatra-black.png';
+        document.querySelector(".header-logo").src = '/assets/logo/EmpatraL.png';
       } else {
-        document.querySelector('.header-logo').src = '/assets/logo/Logo-Empatra.png';
+        document.querySelector('.header-logo').src = '/assets/logo/EmpatraL.png';
       }
     }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (logo.length) {
         // === logo change
         if (ud_header.classList.contains('sticky-header')) {
-          document.querySelector('.header-logo').src = '/assets/logo/Logo-Empatra.png';
+          document.querySelector('.header-logo').src = '/assets/logo/EmpatraS.png';
         } 
       }
     }

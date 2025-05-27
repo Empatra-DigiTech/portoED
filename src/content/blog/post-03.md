@@ -1,36 +1,38 @@
 ---
 draft: false
-title: "The no-fuss guide to upselling and cross selling"
+title: "Kenalin Anomali mengiriman ERROR 404S⛔️⛔️⛔️⛔️ sering muncul saat tidak tertentu yang bikin malas dan stress otak"
 snippet: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 image: {
-    src: "/assets/blog/blog-03.jpg",
+    src: "/assets/blog/3/1.jpg",
     alt: "blog details"
 }
-publishDate: "2023-11-10 11:39"
+publishDate: "2025-05-10 11:39"
 category: "related"
-author: "Samuyl Joshi"
+author: "Vinitiara Ningrum "
 bigImg: {
-    src: "/assets/blog/blog-details-01.jpg",
+    src: "/assets/blog/3/1.jpg",
     alt: "blog details",
 }
 authorImg: {
-    src: "/assets/blog/author-01.png",
+    src: "/assets/team/Vini.png",
     alt: "author",
 }
 comments: "05"
 views: "05"
 tags: ["Design", "Development", "Info"]
 postDetails: {
-    paraOne: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
-    paraTwo: "There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.",
+    paraOne: "",
+    paraTwo: "",
     title: "Sea no quidam vulputate",
-    paraThree: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.",
+    paraThree: "",
     titleTwo: "Sea no quidam vulputate",
-    paraFour: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.",
-    paraFive: "At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel."
+    paraFour: "💡 Mau bangun salah satu platform ini untuk bisnismu?",
+    paraFive: "📩 Hubungi kami di Empatra DigiTech",
+    paraSix: "📧 empatradigitech@gmail.com",
+    paraSeven: "📞 +62 851-7227-0460 (WhatsApp)"
 }
 quotes : {
-    quote: "A spring of truth shall flow from it: like a new star it shall scatter the darkness of ignorance, and cause a light heretofore unknown to shine amongst men.",
-    author: "Andrio Domeco"
+    quote: "The biggest risk is not taking any risk.",
+    author: "Mark Zuckerberg"
 }
 ---

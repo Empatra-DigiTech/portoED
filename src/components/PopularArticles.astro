@@ -1,25 +1,16 @@
 ---
-import Pagination from '../components/Pagination.astro';
-import Breadcrumb from '../components/layout/Breadcrumb.astro';
-import Layout from '../layouts/Layout.astro';
 import { getCollection } from "astro:content";
 
-const articles = [
-  {image: "/assets/team/Vini.png", title: "Website vs Web App vs Mobile App — Apa Bedanya?…", author: "Vinitiara Ningrum"},
-  {image: "/assets/team/Vini.png", title: "🚫 5 Kesalahan Fatal Desain UI/UX yang Masih Sering Terjadi!…", author: "Vinitiara Ningrum"},
-  {image: "/assets/team/Vini.png", title: "Kenalin Anomali mengiriman ERROR 404S⛔️⛔️⛔️⛔️…", author: "Vinitiara Ningrum"},
-  {image: "/assets/team/Vini.png", title: "Jadi gimana nih, Sobat Digitech — Front-End atau Back-End, mana yang kamu minati?…", author: "Vinitiara Ningrum"},
-]
-
-// Filter blog entries with 'draft: false' & date before current date
+// Ambil koleksi blog yang sudah publish dan bukan draft
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
-// Sort content entries by publication date
-publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
+// Sort berdasarkan tanggal publish terbaru
+publishedBlogEntries.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+// Ambil misalnya 4 artikel terpopuler terbaru (bisa disesuaikan)
+const popularArticles = publishedBlogEntries.slice(0, 4);
 ---
 
 <div class="-mx-4 mb-8 flex flex-wrap">
@@ -30,36 +21,32 @@ publishedBlogEntries.sort(function (a, b) {
     >
       Popular Articles
     </h2>
-    <span
-      class="mb-10 inline-block h-[2px] w-20 bg-primary"
-    ></span>
+    <span class="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
   </div>
 
-  {articles.map(article => (
-    <div class="w-full px-4 md:w-1/2 lg:w-full">
+  {popularArticles.map((article) => (
+    <div class="w-full px-4 md:w-1/2 lg:w-full" key={article.id}>
       <div
         class="wow fadeInUp mb-5 flex w-full items-center border-b border-stroke dark:border-dark-3 pb-5"
         data-wow-delay=".1s"
       >
-        <div
-          class="mr-5 h-20 w-full max-w-[80px] overflow-hidden rounded-full"
-        >
+        <div class="mr-5 h-20 w-full max-w-[80px] overflow-hidden rounded-full">
           <img
-            src={article.image}
-            alt="image"
+            src={article.data.authorImage ?? "/assets/team/Vini.png"}
+            alt={`Image of ${article.data.author}`}
             class="w-full"
           />
         </div>
         <div class="w-full">
           <h4>
             <a
-              href={`/blog/post-01`}
+              href={`/blog/${article.slug}`}
               class="mb-1 inline-block text-lg font-medium leading-snug text-dark dark:text-dark-6 hover:text-primary dark:hover:text-primary lg:text-base xl:text-lg"
             >
-              {article.title}
+              {article.data.title}
             </a>
           </h4>
-          <p class="text-sm text-body-color dark:text-dark-6">{article.author}</p>
+          <p class="text-sm text-body-color dark:text-dark-6">{article.data.author}</p>
         </div>
       </div>
     </div>

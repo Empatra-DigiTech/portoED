@@ -2,44 +2,62 @@
 const priceboxes = [
   {
     popular:false,
-    packageName:"Starter",
-    price:'25.00',
+    packageName:"Basic",
+    price:'15 Juta',
     subtitle:'Features',
     btn:'Purchase Now',
     purchaseLink:'/#',
     offerlist: [
-      {title: "Up to 1 User"},
-      {title: "All UI components"},
-      {title: "Lifetime access"},
-      {title: "Free updates"},
+      {title: "🎓 Dashboard Siswa & Guru"},
+      {title: "📚 Upload Materi"},
+      {title: "🆎 Absensi dan Absen"},
+      {title: "📝 Tugas dan Kuis Dasar"},
+      {title: "🧑‍🏫 Manajemen Kelas & Pengguna"},
+      {title: "☁️ Hosting (1 Tahun Pertama)"},
+      {title: "📕 Manual Book dan Video Penggunaan"},
+      {title: "🛠️ Maintenance (Garansi 3 Bulan Pertama)"},
+      {title: "⚙ Revisi Fitur (2x Gratis)"},
     ],
   },
   {
     popular:true,
-    packageName:"Basic",
-    price:'59.00',
+    packageName:"Pro",
+    price:'25 Juta',
     subtitle:'Features',
     btn:'Purchase Now',
     purchaseLink:'/#',
     offerlist: [
-      {title: "Up to 1 User"},
-      {title: "All UI components"},
-      {title: "Lifetime access"},
-      {title: "Free updates"},
+      {title: "📊 Semua Fitur Paket Basic"},
+      {title: "💻 Dashboard Admin"},
+      {title: "✅ Kuis Otomatis & Bank Soal"},
+      {title: "📈 Sistem Penilaian Otomatis"},
+      {title: "🔍 Monitoring Progres Siswa"},
+      {title: "📜 Sertifikat Otomatis"},
+      {title: "✉️ Verifikasi Email"},
+      {title: "🧑‍💼 Multi Admin & Rol"},
+      {title: "🌐 Custom Domain"},
+      {title: "📕 Manual Book dan Video Penggunaan"},
+      {title: "🛠️ Maintenance (Garansi 6 Bulan Pertama)"},
+      {title: "⚙ Revisi Fitur (3x Gratis)"},
     ],
   },
   {
     popular:false,
     packageName:"Premium",
-    price:'99.00',
+    price:'30-60 Juta',
     subtitle:'Features',
     btn:'Purchase Now',
     purchaseLink:'/#',
     offerlist: [
-      {title: "Up to 1 User"},
-      {title: "All UI components"},
-      {title: "Lifetime access"},
-      {title: "Free updates"},
+      {title: "💎 Semua Fitur Paket Pro"},
+      {title: "🖌️ Desain UI/UX Custom"},
+      {title: "🧩 SCORM/HTML5 Content Support"},
+      {title: "🏆 Gamifikasi"},
+      {title: "📚 Laporan Kelas/Guru/Siswa"},
+      {title: "📑 Laporan Bulanan Progres"},
+      {title: "🔌 API Integration"},
+      {title: "🛠️ Maintenance (Garansi 1 Tahun Pertama)"},
+      {title: "⚙ Revisi Fitur (5x Gratis)"},
     ],
   },
 ]
@@ -91,11 +109,8 @@ const priceboxes = [
               {pricebox.packageName}
             </span>
             <h2 class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:leading-[1.21] xl:text-[42px]">
-              <span class="text-xl font-medium">$</span>
+              <span class="text-xl font-medium">Rp</span>
               <span class="ml-1 -tracking-[2px]">{pricebox.price}</span>
-              <span class="text-base font-normal text-body-color dark:text-dark-6">
-                Per Month
-              </span>
             </h2>
   
             <div class="mb-[50px]">
